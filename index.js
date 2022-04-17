@@ -15,8 +15,6 @@ const io = new Server(httpServer, {
   },
 });
 
-console.log({ CLIENT_ADDRESS });
-
 io.on("disconnection", (socket) => {
   console.log("disconnect");
 });
